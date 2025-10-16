@@ -290,6 +290,34 @@ the ability of the model to capture best sellers was improved thriugh threshold 
 </h5>
 
 
+#  Model Interpretation  
+
+<h5>
+the coefficinets of the model were converted to Odd ratios in order to provide insights that are direct and actionable into the influences of popularity. 
+</h5>
+
+<h5>
+<ul>
+  the results of top influences of popularoty that have odd rations that are greater than 1.0. 
+the language US has a ratio odd of 3.619, this shows us that the book that was published in US English has a higher odd of 3.6 times being popular than the baseline. 
+the Rating showed the socre of 2.043, this shows us that For every one standard deviation increase in Average Rating,  the odds of the book being popular more than double. they key is quality. 
+the publish year had odd ratio score of 1.309, this shows us that the books that are newer which are the books that have a higher scaled value, have 1.3 higher odds of being popular, this undercores the trend towards morden publications.  
+</ul>
+</h5>
+
+<h5>
+<ul>
+  Top Suppressors of Popularity (Odds Ratio $< 1.0$)
+the results of top suppressors of popularity that have off rations that are less tha 1.0
+the Publisher_Grouped_Springerhas had odd ratio of 0.026, this shows us that the book from this publisher had a lowere odds of achieving best seller books, the 94% reduction when compared to the baseline validates that non-trade,  publishers do not often produce mass-market hits.
+the Publisher_Grouped_Routledge produced a socre of 0.059. same thing applies here, the publisher suppreses the odd of general popularity. 
+
+</ul>
+
+
+  
+</h5>
+
 
 
 
