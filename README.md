@@ -292,6 +292,7 @@ the model also generated an accuracy of 80% which was misleading becasue the cla
 the results i got from the recall popular class was 62% of missed actual best sellers, this indicated that the model had poor sensitivity to the possitve class. 
 </ul>
 
+<img width="595" height="449" alt="Image" src="https://github.com/user-attachments/assets/ee455c85-26c5-4f2e-a20c-26f271ce124a" />
   
 <ul>
 becasue i noticed that the model was not perfoming very well, i strategically retained the model by setting the deccision probabilty threshold low to 0.3 from 0.5 that was default. 
