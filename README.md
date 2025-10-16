@@ -212,7 +212,60 @@ after that i went tohandle outliers since we know that they can have a negative 
 <p>
   i created the target feature. i defined the target variable and popularity through the transfomation of reviews that were highly skewed into a binary classifier. if a book had review count beyond the specific threshold, i labelled them as popular (1). then i labeleld the other ones that were not popular as (0). i split the data and the split gave me results that demosntrated that 78% was predicted as not popular and 24,2% was predicted as popular. 
 </p>
+ 
+</h5>
 
+# visualisation of data patterns 
+
+<h5>
+
+
+there were relationships that were hughligted by the perfomance of EDA. these relationships are as follows: 
+ 
+
+<p>
+<ul>i created a rating distributuion visualisation which showed me that the average of book rating is skwewed heavily towards 3.5 to 5.0. this shows us that in the dataset, majority of the books are well considered.</ul>
+
+<ul>the next step was to create a correlation matrix. the results from this implementation validated that the main numericaal features that include rating, page numbers and the year of publication are not dependant. they showed coefficients that are close to zero. for example, the correlation between rating and the publisher is 0.01. this is a multicollinearity issue which is common in the linear models like this logistic regression model we are working on  </ul>
+
+<ul>
+i plotted a scatter plot which shows the rating against the log-transformed counts of reviews. this visualisation showed us high ratings which are needed for popularity, however, they are not enough, there is a presence eof dense cluster of low reviews and that highlighted that we need more predictors. 
+ 
+</ul>
+
+</p>
+ 
+</h5>
+
+#  Feature Selection 
+
+i did 2 processed to conduct feature selection in order to ensure that i included only variables that are independent and statisitcally significant. 
+
+<ul>1. i checked for multicollinearity VIF, the results i obtained from this showed me that the core numerical features that include , rating, page numbers and year of publication has a VIF score of appromitely 1.07 and 1.09. this indicated that there is no multicollinearity and good independance . </ul>
+
+2. the next step i did was to check for Statistical Significance Check (P-Values). 
+
+<ul>
+  i converted the high-cardinality categorical features which include language and publisher, i sued one-hot  (OHE)  encoding method for this 
+</ul>
+
+<ul>
+i came across a challange of singular metrix erro that was casued by the parse OHE columns, to adress that problem i filtered out all the OHE features that has less than 50 possitive observations. 
+</ul>
+
+<ul>
+  i fitted the regression model in a dataset that was reduced in order to calculate the P-values. i retained few features that has a p value of 0.5 or less and i used backward elimination approach to do this. 
+</ul>
+<ul>
+there were results for that which showed a new reduced feature to 89 predictors thay are statisitically significant and ready for model training. 
+</ul>
+
+#  Model Training and Evaluation 
+
+#  Model Training and Initial Evaluation 
+
+<h5>
+the dataset was split into the sets of 60% training and 20% testing. i scalled the features thriugh standardScaler. the 89 selected features were used to train a logistic regression model. 
   
 </h5>
 
