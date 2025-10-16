@@ -234,6 +234,8 @@ i plotted a scatter plot which shows the rating against the log-transformed coun
 </ul>
 
 </p>
+
+<img width="1388" height="955" alt="Image" src="https://github.com/user-attachments/assets/746386ab-0da1-4268-a9da-9b26c7d41855" /> 
  
 </h5>
 
