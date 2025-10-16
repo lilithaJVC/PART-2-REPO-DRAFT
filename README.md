@@ -236,8 +236,16 @@ i plotted a scatter plot which shows the rating against the log-transformed coun
 </p>
 
 <img width="1388" height="955" alt="Image" src="https://github.com/user-attachments/assets/746386ab-0da1-4268-a9da-9b26c7d41855" /> 
+<p>
+
+  
+</p>
 
 <img width="778" height="682" alt="Image" src="https://github.com/user-attachments/assets/cf344804-4610-41ec-85f5-326e2bdeb61a" />
+<p>
+
+  
+</p>
 
 
 <img width="838" height="546" alt="Image" src="https://github.com/user-attachments/assets/5ee2128c-9648-43ec-ba1b-fea833227ea5" />
