@@ -313,9 +313,15 @@ the Publisher_Grouped_Springerhas had odd ratio of 0.026, this shows us that the
 the Publisher_Grouped_Routledge produced a socre of 0.059. same thing applies here, the publisher suppreses the odd of general popularity. 
 
 </ul>
-
-
   
+</h5>
+
+# conclusion 
+
+<h5>
+The Logistic Regression model, after  cleaning, feature selection, as well as  strategic threshold adjustment was able archive an F1-Score of 0.54 and successfully increased its crucial Recall to 0.50 for the positive class.
+the model shows us a clear actionable conclusions that priorotise the qualty over the market. the stongest numeric predictor from this model is the average rating. the target of the books is the english-language market since is has the highest possibility for popularity. 
+
 </h5>
 
 
