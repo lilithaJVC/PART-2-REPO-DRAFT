@@ -241,14 +241,18 @@ i plotted a scatter plot which shows the rating against the log-transformed coun
 
 #  Feature Selection 
 
-<h5>i did 2 processed to conduct feature selection in order to ensure that i included only variables that are independent and statisitcally significant. 
+<h5>
+i conducted 2 processes  to conduct feature selection in order to ensure that i included only variables that are independent and statisitcally significant. 
 
-<ul>1. i checked for multicollinearity VIF, the results i obtained from this showed me that the core numerical features that include , rating, page numbers and year of publication has a VIF score of appromitely 1.07 and 1.09. this indicated that there is no multicollinearity and good independance . </ul>
+<ul>
+1. i checked for multicollinearity VIF, the results i obtained from this showed me that the core numerical features that include , rating, page numbers and year of publication has a VIF score of appromitely 1.07 and 1.09. this indicated that there is no multicollinearity and good independance . </ul>
+
+
 
 2. the next step i did was to check for Statistical Significance Check (P-Values). 
 
 <ul>
-  i converted the high-cardinality categorical features which include language and publisher, i sued one-hot  (OHE)  encoding method for this 
+i converted the high-cardinality categorical features which include language and publisher, i sued one-hot  (OHE)  encoding method for this 
 </ul>
 
 <ul>
@@ -267,12 +271,15 @@ there were results for that which showed a new reduced feature to 89 predictors 
 #  Model Training and Initial Evaluation 
 
 <h5>
+  
 <ul>
 the dataset was split into the sets of 60% training and 20% testing. i scalled the features thriugh standardScaler. the 89 selected features were used to train a logistic regression model. 
 i the model returned a Initial AUC-ROC score of 0.777 which indicated that the model had a decent ability to differenciate bwetween classes that are popular and classes that are not polular. 
 the model also generated an accuracy of 80% which was misleading becasue the class was not balanced. this shows us that it is not a reliable main metric.  
 the results i got from the recall popular class was 62% of missed actual best sellers, this indicated that the model had poor sensitivity to the possitve class. 
 </ul>
+
+  
 <ul>
 becasue i noticed that the model was not perfoming very well, i strategically retained the model by setting the deccision probabilty threshold low to 0.3 from 0.5 that was default. 
 </ul>
