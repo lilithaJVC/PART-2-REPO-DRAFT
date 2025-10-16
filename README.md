@@ -305,6 +305,8 @@ the model also showed results of true possitves from 1,009
 to 1,343 in identifying correcly 334 more best sellers  
 </ul>
 
+<img width="595" height="449" alt="Image" src="https://github.com/user-attachments/assets/0c0296a2-3c8c-40b2-9a3a-f9cd27d5e2ff" />
+
 <ul>
 the ability of the model to capture best sellers was improved thriugh threshold adjustements, this adjustment achieved a better banalance of predctive ability that is ideal for the objective of the project. 
 </ul>
