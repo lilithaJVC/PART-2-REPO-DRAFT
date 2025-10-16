@@ -239,7 +239,7 @@ i plotted a scatter plot which shows the rating against the log-transformed coun
 
 #  Feature Selection 
 
-i did 2 processed to conduct feature selection in order to ensure that i included only variables that are independent and statisitcally significant. 
+<h5>i did 2 processed to conduct feature selection in order to ensure that i included only variables that are independent and statisitcally significant. 
 
 <ul>1. i checked for multicollinearity VIF, the results i obtained from this showed me that the core numerical features that include , rating, page numbers and year of publication has a VIF score of appromitely 1.07 and 1.09. this indicated that there is no multicollinearity and good independance . </ul>
 
@@ -258,7 +258,7 @@ i came across a challange of singular metrix erro that was casued by the parse O
 </ul>
 <ul>
 there were results for that which showed a new reduced feature to 89 predictors thay are statisitically significant and ready for model training. 
-</ul>
+</ul></h5>
 
 #  Model Training and Evaluation 
 
