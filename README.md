@@ -184,5 +184,36 @@ This final step is important because: it shows the entire process of the analysi
 
 # [ Report ] 
 
+# Introduction 
+
+
+
+<h5>
+
+as the main goal of the project was to conduct a logisitc regression model that is bale to predict the best selling books that is how popular the book us. this model serves as an important tool for decision making as it allows the allocation of marketing resources. in this report i will be taking you through the steps that i took to analyse the model. the name of the dataset chosen for this task is Goodreads Book Dataset 10M, i used a subsent book400k-500k.csv to develop this logisitc  regression classification model . 
+
+</h5>
+
+# Exploratory Data Analysis (EDA) 
+
+# Transforming and cleaning the data
+<h5>
+  
+<<p>the first thing i perfomed on my selected dataset was EDA. i cleaned as well as transformed the data. i did that by standardizing columns names from the first untill the last column.
+the next thing i did was to handle data types and missing values. i imputed the mising values, i did that using median for example the number of pages. i then grouped some misisng values under the unknown publisher. </p>
+
+<p>
+  
+after that i went tohandle outliers since we know that they can have a negative effect in the perfomance of the model. i checked the number of reviews and i managed to drop extreme outliers that has over 3 million reviews. the reason behind that was becasue i wanted to distort the variance and the mean. 
+
+</p>
+
+
+<p>
+  i created the target feature. i defined the target variable and popularity through the transfomation of reviews that were highly skewed into a binary classifier. if a book had review count beyond the specific threshold, i labelled them as popular (1). then i labeleld the other ones that were not popular as (0). i split the data and the split gave me results that demosntrated that 78% was predicted as not popular and 24,2% was predicted as popular. 
+</p>
+
+  
+</h5>
 
 
