@@ -265,8 +265,31 @@ there were results for that which showed a new reduced feature to 89 predictors 
 #  Model Training and Initial Evaluation 
 
 <h5>
+<ul>
 the dataset was split into the sets of 60% training and 20% testing. i scalled the features thriugh standardScaler. the 89 selected features were used to train a logistic regression model. 
+i the model returned a Initial AUC-ROC score of 0.777 which indicated that the model had a decent ability to differenciate bwetween classes that are popular and classes that are not polular. 
+the model also generated an accuracy of 80% which was misleading becasue the class was not balanced. this shows us that it is not a reliable main metric.  
+the results i got from the recall popular class was 62% of missed actual best sellers, this indicated that the model had poor sensitivity to the possitve class. 
+</ul>
+<ul>
+becasue i noticed that the model was not perfoming very well, i strategically retained the model by setting the deccision probabilty threshold low to 0.3 from 0.5 that was default. 
+</ul>
   
+<ul>
+this adjusted the model to a precsion of 0.58 which shows a decrease of 8%. 
+the f1-score was improved from 0.48 to 0.54 which shows a balanced improvement 
+the model also showed results of true possitves from 1,009
+to 1,343 in identifying correcly 334 more best sellers  
+</ul>
+
+<ul>
+the ability of the model to capture best sellers was improved thriugh threshold adjustements, this adjustment achieved a better banalance of predctive ability that is ideal for the objective of the project. 
+</ul>
+
+
 </h5>
+
+
+
 
 
