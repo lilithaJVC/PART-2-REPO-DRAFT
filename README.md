@@ -93,6 +93,91 @@ Common Pitfalls and Mitigation Strategies
 <h5>
 
 To conclude, Goodreads Book Datasets 10M (subset book400k–500k.csv) is a perfect choice for logistic regression classification. It satisfies the minimum size requirements and it contain categorical and numerical predictors. It also demonstrates data challenges that are realistic that enables a meaningful data pre-processing and cleaning. Its quality makes it suitable for modelling the factors that influence whether a book becomes a bestseller which shows an excellent understanding of data selection, modelling as well as quality considerations. 
+</h5>
 
+# Analysis Planning  
+# (a) Exploratory Data Analysis (EDA) 
+
+<h5>
+
+It is important to ensure that the dataset is clean and comprehensive before we proceed to the model building. I will implement the following steps to perform exploratory data analysis in the selected dataset. 
+<ul>•	Data inspection: I will assess the dataset in order to check data types and the names of the columns with a few rows, this will be done in order to identify any formatting or error problems. </ul>
+<ul>•	The second step I will do is to check for any missing values, I will check for any missing values or records that are not complete and decide on the imputation method. </ul>
+<ul>•	I will check for duplicates; I will drop the duplicate rows through the method drop duplicates(). </ul>
+<ul>•	After completing the above steps, I will plot the distribution variables that includes Rating and CountsOfReview in order to see the skewed variables and outliers that may cause bias in the model. </ul>
+<ul>•	Descriptive statistics: I will make a summary using numerical data in order to understand speak, standard deviation and the mean. </ul>
+<ul>•	Correlation matrix: I will generate a correlation matrix in order to assess how features relate to each other. </ul>
+<ul>•	Lasty, I will create visualisations that include histograms, scatterplots, and boxplots to make a visual confirmation of trends and relationships within the dataset. 
+</ul>
+<p>
+  This step is important because: it helps me better understand how the data is structured , I can easily identify challenges at an early stage and make informed decisions during its cleaning and feature selection. It is also important because it ensures that the data is accurate and also reliable before I can move to the model building and that improves the model performance as well as interpretation. 
+</p>
+  
+</h5>
+
+#   (b) Feature Selection
+
+<h5>
+
+For the purpose of predicting book success, it is extremely important to select the most relevant variables. The steps in selecting them are as follows: 
+<ul>•	The first thing I will do is data inspection, I will retain  variables that are relevant to the prediction, these variables can include, for example  CountsOfReview column ,publisher , and rating.</ul>
+<ul>•	The next thing I will do is to perform statistical testing, I will use P-Values and correlation coefficients in order to identify the features that have meaningful and strong relationship with the target. </ul>
+<ul>•	Backward Elimination: I will make sure to remove features that have a high P-Value using an iteration in order to only retain predictors that are significant. </ul>
+<ul>•	Domain Knowledge filtering : I will filter the data in order to keep features that have a logical effect in the book’s popularity. </ul>
+<ul>•	The final step I will do here is to check for Multicollinearity in order to ensure that the features selected are not highly correlated, I will use variance inflation factor VIF.</ul>
+This step is important because: ensuring that the right features are selected increases the accuracy of the model and also prevents overfitting. This also simplifies the model interpretation. This step also ensures that the predictions are based on the data that is mostly meaningful. 
+</h5>
+
+#   (c) Train Model 
+
+<h5>
+
+For the purposes of training a logistic regression model, I will implement the following steps:
+
+<ul>•	Split the data: I will split the dataset into the sets of training and testing. I will use 80% for training and 20 for testing.</ul> 
+<ul>•	I will then implement feature scaling by applying StandardScaler in order to normalise data that is numeric for a model convergence that is better. </ul>
+<ul>•	The following step will be the target definition or declaration, I will create a binary target variable. </ul>
+<ul>•	I will also test different solvers and the strength of regularization using hyperparameter tuning. </ul>
+<ul>•	The final step in model training will be cross validation, I will implement k-fold cross validation in order to ensure consistency and also prevent overfitting. 
+</ul>
+
+This step is important because: it is a good way of defining how well the logistic model learns from data and also generalise unseen examples. This also ensures that the model is efficient, optimised as well as balanced for accuracy. 
+</h5>
+
+
+# (d) Interpret and Evaluate Model
+
+<h5>
+
+For the purpose of interpreting and validating the performance of the model, I will implement the following steps: 
+<ul>•	Confusion Metrix: I will implement a confusion matrix that will help me see the number of correct and incorrect predictions by looking at true and false positives and negatives. </ul>
+<ul>•	The next step will be the calculation of accuracy score to calculate the number of correct predictions total out of all the test samples. </ul>
+<ul>•	I will calculate metrics that include precision, recall as well as F1-score in order to see how well my model is able to identify the books that belong to the positive category </ul>
+<ul>•	I will use ROC curve and AUC to check the trade-off that lies in between predicting the correct positives and negatives in order to see how the model separates the 2 classes</ul>
+<ul>•	The next step is to perform model validation, I will use the unseen data to test the model to ensure that it generalize and not only memorize the training data. </ul>
+<ul>•	Lastly, I will perform error analysis by checking the misclassified books in order to understand  where the model struggles and the ways it can be improved. </ul>
+
+This step is important because: it provides me an opportunity to understand the strengths and the weaknesses of the model in order to ensure that the predictions at the end are accurate, fair as well as reliable. It also improves the model by highlight points of errors. 
+
+</h5>
+
+# (e) Write a Report 
+
+<h5>
+
+
+The report I will do at the end of the task will include the main steps and finding I obtained from the analysis. This will begin from data cleaning until the model evaluation. It will be written in an organised manner to make it easy for the reader to understand the work done. It will be structured as follows:
+
+<ul>•	Introduction to explain what the task is about and what I am doing with what dataset in order to achieve the  requirements from the assessment. </ul>
+<ul>•	Data overview that describes the dataset, the type of data present in it and the size of the dataset. </ul>
+<ul>•	EDA results, I will ensure to put the visuals and explanations showing the trends, correlation, and the quality of the dataset.</ul>
+<ul>•	 I will also explain what I did to clean the dataset ,what I did to handle missing values, inconsistences and to also prepare the dataset for modelling. </ul>
+<ul>•	Model training: here I will be explaining how I trained the logistic regression model,  the features that I used and which ones worked best. </ul>
+<ul>•	I will evaluate the model by showing the accuracy of the model and the other metrics that I have implemented like Confusion matrix and explain what the results mean. </ul>
+<ul>•	I will close the report with a brief conclusion that reflects on how effective was the model and ways in which It can be improved. </ul>
+<ul>•	I will also include the visualisation that backup my insights of findings of the logistic model analysis. </ul>
+
+This final step is important because: it shows the entire process of the analysis, from the first step until the findings of the analysis. This helps the readers understand how the results were obtained and also showing the procedure that was followed to conduct the analysis. 
+  
 </h5>
 
